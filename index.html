@@ -1552,7 +1552,7 @@ document.querySelectorAll("[data-go]").forEach(function (button) {
   &lt;video class=&quot;home-hero__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;video/home-landscape.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;home-landscape.mp4&quot; type=&quot;video/mp4&quot;&gt;
 
   &lt;/video&gt;&lt;div class=&quot;home-hero__shade&quot; aria-hidden=&quot;true&quot;&gt;
 
@@ -1630,7 +1630,7 @@ document.querySelectorAll("[data-go]").forEach(function (button) {
   &lt;video class=&quot;invitation-hero__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;video/detective-desk.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;detective-desk.mp4&quot; type=&quot;video/mp4&quot;&gt;
   &lt;/video&gt;
 
   &lt;div class=&quot;invitation-hero__shade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
@@ -1667,7 +1667,7 @@ document.querySelectorAll("[data-go]").forEach(function (button) {
   &lt;video class=&quot;scene__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;video/origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
   &lt;/video&gt;
 
   &lt;div class=&quot;scene__shade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
@@ -1697,7 +1697,7 @@ Probably...
   &lt;video class=&quot;scene__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;video/origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
   &lt;/video&gt;
 
   &lt;div class=&quot;scene__shade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
@@ -1751,30 +1751,14 @@ AVAILABLE EXHIBITS
 
 [[EXHIBIT D — The Next Chapter-&gt;Exhibit D]]
 
----
-
-INVESTIGATION PROGRESS
-
-Evidence collected: &lt;&lt;print typeof $EvidenceCount === &quot;number&quot; ? $EvidenceCount : &quot;NOT INITIALIZED&quot;&gt;&gt; / 4
-
-&lt;&lt;if $EvidenceCount &gt;= 2&gt;&gt;
-  Requirement met: You have examined at least two exhibits.
 
   [[PROCEED TO INTERROGATION-&gt;Interrogation 1]]
-&lt;&lt;else&gt;&gt;
-  Remaining: Visit at least two exhibits before proceeding to the Interrogation.
-&lt;&lt;/if&gt;&gt;
-
-[[CHECK THE FINAL GATE-&gt;Final Gate]]
+  
+  [[CHECK THE FINAL GATE-&gt;Final Gate]]
 
     &lt;/section&gt;
   &lt;/main&gt;
-&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Exhibit A" tags="" position="825,400" size="100,100">&lt;&lt;if not $ExhibitA&gt;&gt;
-    &lt;&lt;set $ExhibitA = true&gt;&gt;
-    &lt;&lt;set $EvidenceCount += 1&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-
-EXHIBIT A
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Exhibit A" tags="" position="825,400" size="100,100">EXHIBIT A
 
 THE FIRST INCIDENT
 
@@ -1783,13 +1767,10 @@ EVIDENCE TYPE: Origin memory and Photographic Record
 STATUS: Verified
 
 It started with a treat on the shuttle and just a mobile load.
-
 You needed some at school, and I happened to have enough to spare.
-
 At the time, it was just a small favor. I didn&#39;t know that I would eventually be building an entire detective website about us.
 
 I guess the evidence suggests that my heart was already making questionable decisions.
-
 Also, at that same day, you messaged me and thanked me for it. I didn&#39;t mean for that to happen but I guess it is really inevitable. 
 
 CLUE RECOVERED: SPARE
@@ -1799,12 +1780,7 @@ Sometimes, the smallest things are the beginning of a much bigger story.
 And we&#39;re a testament to it...
 
 [[RETURN TO THE MUSEUM-&gt;Museum]]
-</tw-passagedata><tw-passagedata pid="7" name="Exhibit B" tags="" position="950,400" size="100,100">&lt;&lt;if not $ExhibitB&gt;&gt;
-    &lt;&lt;set $ExhibitB = true&gt;&gt;
-    &lt;&lt;set $EvidenceCount += 1&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-
-EXHIBIT B
+</tw-passagedata><tw-passagedata pid="7" name="Exhibit B" tags="" position="950,400" size="100,100">EXHIBIT B
 
 THE UNEXPECTED INVITATION
 
@@ -1829,12 +1805,7 @@ This is one of our first photo we took together. It&#39;s a really unexpected mo
 CLUE RECOVERED: TOGETHER
 
 [[RETURN TO THE MUSEUM-&gt;Museum]]
-</tw-passagedata><tw-passagedata pid="8" name="Exhibit C" tags="" position="1075,400" size="100,100">&lt;&lt;if not $ExhibitC&gt;&gt;
-    &lt;&lt;set $ExhibitC = true&gt;&gt;
-    &lt;&lt;set $EvidenceCount += 1&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-
-EXHIBIT C
+</tw-passagedata><tw-passagedata pid="8" name="Exhibit C" tags="" position="1075,400" size="100,100">EXHIBIT C
 
 THE WALK
 
@@ -1861,12 +1832,7 @@ Some people we passed by probably heard what I&#39;m saying because of how loud 
 CLUE RECOVERED: HONESTY
 
 [[RETURN TO THE MUSEUM-&gt;Museum]]
-</tw-passagedata><tw-passagedata pid="9" name="Exhibit D" tags="" position="1200,400" size="100,100">&lt;&lt;if not $ExhibitD&gt;&gt;
-    &lt;&lt;set $ExhibitD = true&gt;&gt;
-    &lt;&lt;set $EvidenceCount += 1&gt;&gt;
-&lt;&lt;/if&gt;&gt;
-
-EXHIBIT D
+</tw-passagedata><tw-passagedata pid="9" name="Exhibit D" tags="" position="1200,400" size="100,100">EXHIBIT D
 
 THE NEXT CHAPTER
 
@@ -2090,21 +2056,21 @@ The sentence is to be served voluntarily, with the right to request hugs at any 
 CASE CLOSED...
 
 P.S. The investigator reserves the right to reopen this case every anniversary.
-</tw-passagedata><tw-passagedata pid="14" name="StoryInIT" tags="" position="1400,525" size="100,100">&lt;&lt;set $OriginSolved = false&gt;&gt;
+</tw-passagedata><tw-passagedata pid="14" name="StoryInIT" tags="" position="1400,525" size="100,100">&lt;&lt;set $EvidenceCount = 0&gt;&gt;
 &lt;&lt;set $ExhibitA = false&gt;&gt;
 &lt;&lt;set $ExhibitB = false&gt;&gt;
 &lt;&lt;set $ExhibitC = false&gt;&gt;
 &lt;&lt;set $ExhibitD = false&gt;&gt;
+&lt;&lt;set $OriginSolved = false&gt;&gt;
 &lt;&lt;set $Interrogation1Done = false&gt;&gt;
 &lt;&lt;set $Interrogation2Done = false&gt;&gt;
 &lt;&lt;set $Interrogation3Done = false&gt;&gt;
-&lt;&lt;set $FutureAnswer = &quot;&quot;&gt;&gt;
-&lt;&lt;set $EvidenceCount = 0&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="The Origin" tags="" position="950,275" size="100,100">&lt;div class=&quot;scene&quot;&gt;
+&lt;&lt;set $FutureAnswer = &quot;&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="The Origin" tags="" position="950,275" size="100,100">&lt;div class=&quot;scene&quot;&gt;
 
   &lt;video class=&quot;scene__video&quot;
          autoplay muted loop playsinline
          preload=&quot;metadata&quot; aria-hidden=&quot;true&quot;&gt;
-    &lt;source src=&quot;video/origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
+    &lt;source src=&quot;origin-video.mp4&quot; type=&quot;video/mp4&quot;&gt;
   &lt;/video&gt;
 
   &lt;div class=&quot;scene__shade&quot; aria-hidden=&quot;true&quot;&gt;&lt;/div&gt;
